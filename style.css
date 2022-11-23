@@ -2,12 +2,20 @@ body{
     margin:0;
     padding:0;
 font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+text-align: center;
 }
 
-header{
+header,ul{
 background-color: black;
 color: white;
 display: flex;
+justify-content: space-around;
+gap:15px;
+
+}
+header li{
+  text-decoration: none;  
+
 }
 header li:hover{
     border: 2px solid lightcyan;
@@ -16,39 +24,104 @@ header li:hover{
     cursor: pointer;
    
 }
-ul{
+
+.boxes{
     display: flex;
-    gap:2rem;
-    
+
+    flex-direction: row;
+    justify-content: space-evenly;
 }
-li{
-    margin-top: 10px;
-    align-items: center;
-    list-style: none;
-    
+
+.item{
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    border:2px solid #3882f6  ;
 }
-h1{
-    display: inline;
-}
-img{
-    display: inline;
-}
-.content{
-    background-color: black;
-    color:white
-}
+
+
 .random h2{
 text-align: center;
 }
-.info li{
-    width:100px;
-    height: 100px;
-    border:3px solid lightskyblue;
-    border-radius: 5px;
-}
+
+
 footer{
     background-color: black;
     color:white;
     text-align: center;
-    height: 25px;
+    height: 30px;
+   
+}
+
+
+.hero {
+    display: flex;
+    color: #F9FAF8;
+    background-color: #1F2937;
+    align-items: center;
+    justify-content: center;
+    padding: 90px;
+}
+
+.hero-cta {
+    flex-basis: 400px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-right: 50px;
+}
+
+.hero-cta p {
+    font-family: 'Roboto', arial;
+    opacity: 0.7;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #F9FAF8;
+    margin: 0;
+    font-family: 'Roboto', arial;
+}
+
+.hero button {
+    display: block;
+    text-align: center;
+    width: 110px;
+    border: none;
+    background: #3882f6;
+    padding: 10px;
+    border-radius: 8px;
+    color: #fff;
+    font-family: 'Roboto', arial;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero-image img {
+    width: 500px;
+    height: 350px;
+}
+.quote{
+   padding-top: 80px;
+    text-align: center;
+    height: 160px;
+    background-color: #E5E7EB;
+}
+.call{
+    background-color: #3882f6;
+    color: white;
+    
+    display: flex;
+    justify-content: space-around;
+    
+}
+.sign-btn{
+    
+    color:white;
+    margin-top:10px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid white;
+    background-color: #3882f6;
 }
